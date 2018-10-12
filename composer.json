@@ -1,0 +1,32 @@
+{
+	"name" : "jschaedl/iban-generation",
+	"license" : "MIT",
+	"type" : "library",
+	"description" : "A small library for generating International BankAccount Numbers (IBANs).",
+	"keywords" : ["iban", "validation"],
+	"homepage" : "https://github.com/jschaedl/iban-generation",
+	"authors" : [{
+		"name" : "Jan Schaedlich",
+		"email" : "mail@janschaedlich.com",
+		"homepage" : "https://www.linkedin.com/in/janschaedlich"
+	}],
+	"autoload": {
+		"psr-4": { "Iban\\Generation\\": "src" }
+	},
+	"autoload-dev": {
+		"psr-4": { "Iban\\Generation\\Tests\\": "Tests" }
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0-dev"
+		}
+	},
+	"require" : {
+		"php" : "^7.1.3",
+		"symfony/yaml": "~4.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "~7.0",
+		"friendsofphp/php-cs-fixer": "~2.0"
+	}
+}
